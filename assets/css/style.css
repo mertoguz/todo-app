@@ -9,8 +9,7 @@ body {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
-.content  {
-    width: 70%;
+.content  { 
     margin: 0 auto;
     padding: 15px !important;
     background-color: #484848 !important;
@@ -24,6 +23,11 @@ body {
 
 .add-todo {
     margin: 0 auto;
+}
+
+.add-todo button {
+    margin-top: 5px;
+    width: 100%;
 }
 
 .todo-list {
@@ -71,4 +75,16 @@ body {
     border-top: 1px solid gray;
     background-color: #282d2f;
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: 70%;
+    }
+
+    .add-todo button {
+        width: auto;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
 }
