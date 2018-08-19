@@ -20,7 +20,7 @@ export class TodoForm extends React.Component {
             <form className="form-inline" onSubmit={this.addToList} >
                 <div className="add-todo">
                 <input id="add-todo" type="text" autoComplete="off" className="form-control" placeholder="What else to do.."/>
-                <button className="btn btn-outline-primary ml-2" type="button" onClick={this.addToList}>Add to list</button>
+                <button className="btn btn-outline-primary" type="button" onClick={this.addToList}>Add to list</button>
                 </div>
             </form>
         </div>

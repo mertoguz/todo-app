@@ -18,9 +18,11 @@ class App extends Component {
   }
   
   addToList = (todo) =>  {
-    let tempList = this.state.thingsToDo;
-    tempList.push({ text : todo, status: "todo" });
-    this.setState({thingsToDo : tempList})
+    if(todo) {
+      let tempList = this.state.thingsToDo;
+      tempList.push({ text : todo, status: "todo" });
+      this.setState({thingsToDo : tempList})
+    }
   }
 
   setToDone (id) {
