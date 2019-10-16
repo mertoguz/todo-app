@@ -36,6 +36,10 @@ body {
 .todo-item {
     list-style: none;
     border-radius: 5px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65px;
 }
 
 .todo-item:not(:first-child) {
@@ -45,9 +49,7 @@ body {
 .todo-item:hover .todo-buttons {
     display: block;
 }
-.todo-things {
-    display: inline-block;
-}
+
 .todo-buttons {
     float: right;
     display: none;
