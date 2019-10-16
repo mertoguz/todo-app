@@ -7,18 +7,20 @@ class App extends Component {
     constructor() {
         super();
 
-        this.state = { thingsToDo : [
-            { text: "Work hard", status: "todo" },
-            { text: "Play hard", status: "todo" },
-            { text: "Love more", status: "todo" }
-        ]};
+        this.state = { 
+            thingsToDo : [
+                { text: "Work hard", status: "todo" },
+                { text: "Play hard", status: "todo" },
+                { text: "Love more", status: "todo" },
+            ]
+        };
 
         this.setToDone = this.setToDone.bind(this);
         this.remove = this.remove.bind(this);
     }
   
     addToList = (todo) =>  {
-        if(todo) {
+        if (todo) {
             let tempList = this.state.thingsToDo;
             tempList.push({ text : todo, status: "todo" });
             this.setState({thingsToDo : tempList})
