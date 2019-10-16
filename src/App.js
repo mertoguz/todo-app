@@ -54,7 +54,7 @@ class App extends Component {
                 <div className="jumbotron content">
                     <TodoForm addToList={this.addToList} />
                     <TodoList 
-                        thingsToDo ={this.state.thingsToDo} 
+                        thingsToDo={this.state.thingsToDo} 
                         setToDone={this.setToDone} 
                         remove={this.remove}
                     />

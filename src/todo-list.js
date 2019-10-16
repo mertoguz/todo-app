@@ -39,11 +39,12 @@ export class TodoList extends React.Component {
             )
         });
         return (
-                <div>
-                    <ul className="todo-list list-group list-group-flush">
-                        {items}
-                    </ul>
-                </div>
+            items.length ?
+                <ul className="todo-list list-group list-group-flush">
+                    {items}
+                </ul> :
+
+                <p className="todo-list-empty">Woops! this list looks like empty. Add something to do now.</p>
         )
     }
 }
