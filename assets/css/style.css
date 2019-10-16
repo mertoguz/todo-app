@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #282d2f !important;
 }
+
 .header {
     text-align: center;
     margin-top: 50px;
@@ -9,11 +10,17 @@ body {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.app-container {
+    margin-bottom: 50px;
+}
+
 .content  { 
     margin: 0 auto;
     padding: 15px !important;
     background-color: #484848 !important;
 }
+
 .todo-form {
     text-align: center;
     margin-top: 15px;
@@ -33,6 +40,15 @@ body {
 .todo-list {
     margin-top: 15px;
 }
+
+.todo-list-empty {
+    background: white;
+    margin: 15px 0 0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .todo-item {
     list-style: none;
     border-radius: 5px !important;
@@ -48,11 +64,6 @@ body {
 
 .todo-item:hover .todo-buttons {
     display: block;
-}
-
-.todo-buttons {
-    float: right;
-    display: none;
 }
 
 .todo-todo {
@@ -88,5 +99,9 @@ body {
         width: auto;
         margin-left: 5px;
         margin-bottom: 5px;
+    }
+
+    .todo-buttons {
+        display: none;
     }
 }
