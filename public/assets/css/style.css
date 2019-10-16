@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-color: #282d2f !important;
 }
+
 .header {
     text-align: center;
     margin-top: 50px;
@@ -9,11 +10,17 @@ body {
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
+
+.app-container {
+    margin-bottom: 50px;
+}
+
 .content  { 
     margin: 0 auto;
     padding: 15px !important;
     background-color: #484848 !important;
 }
+
 .todo-form {
     text-align: center;
     margin-top: 15px;
