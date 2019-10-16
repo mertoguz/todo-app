@@ -27,15 +27,18 @@ export class TodoList extends React.Component {
 						<span className={`todo-${el.status} ml-2`}><i className="fas fa-check"/></span>
 					</div>
 					<div className="todo-buttons" id={taskId}>
-						<button type="button" 
-						className="btn btn-outline-success ml-2 btn-todo" 
-						onClick={this.setToDone}>
+						<button
+							type="button" 
+							className="btn btn-outline-success ml-2 btn-todo" 
+							onClick={this.setToDone}
+						>
 							<i className="fas fa-check"/>
 						</button>
 						<button 
-						type="button" 
-						className="btn btn-outline-danger ml-2 btn-todo" 
-						onClick={this.remove}>
+							type="button" 
+							className="btn btn-outline-danger ml-2 btn-todo" 
+							onClick={this.remove}
+						>
 							<i className="fas fa-trash"/>
 						</button>
 					</div>
