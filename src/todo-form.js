@@ -29,7 +29,7 @@ export class TodoForm extends React.Component {
     render () {
         return (
             <div className="todo-form">
-                <form className="form-inline">
+                <form className="form-inline" onSubmit={this.addToList}>
                     <div className="add-todo">
                         <input
                             id="add-todo"

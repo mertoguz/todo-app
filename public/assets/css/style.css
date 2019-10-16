@@ -86,6 +86,7 @@ body {
 .app-footer {
     bottom: 0;
     position: fixed;
+    z-index: 5555;
     text-align: center;
     width: 100%;
     padding: 10px 0;
