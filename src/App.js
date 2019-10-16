@@ -29,11 +29,8 @@ class App extends Component {
 		id = id.replace("task","");
 		let tempList = this.state.thingsToDo;
 
-		//sometimes id is not coming I don't know wtf
-		if (id) {
 		tempList[id].status = "done";
 		this.setState({thingsToDo : tempList});
-		}
 	}
 
 	remove (id) {

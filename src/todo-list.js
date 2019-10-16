@@ -1,19 +1,12 @@
 import React from 'react';
 
 export class TodoList extends React.Component {
-
-	constructor () {
-		super();
-		this.setToDone = this.setToDone.bind(this);
-		this.remove = this.remove.bind(this);
+	setToDone (taskId) {
+		this.props.setToDone(taskId);
 	}
 
-	setToDone (e) {
-		this.props.setToDone(e.target.parentNode.id);
-	}
-
-	remove (e) {
-		this.props.remove(e.target.parentNode.id);
+	remove (taskId) {
+		this.props.remove(taskId);
 	}
 
 	render () {
@@ -30,14 +23,14 @@ export class TodoList extends React.Component {
 						<button
 							type="button" 
 							className="btn btn-outline-success ml-2 btn-todo" 
-							onClick={this.setToDone}
+							onClick={e => this.setToDone(taskId, e)}
 						>
 							<i className="fas fa-check"/>
 						</button>
 						<button 
 							type="button" 
 							className="btn btn-outline-danger ml-2 btn-todo" 
-							onClick={this.remove}
+							onClick={e => this.remove(taskId, e)}
 						>
 							<i className="fas fa-trash"/>
 						</button>
